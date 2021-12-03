@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guessing</title>
+</head>
+<body>
+	<script>
+		var rand;
+		var number;
+		var guess;
+		var game=1;
+		rand=Math.floor((Math.random()*10)+1);
+		
+		while(game==1){
+			number=window.prompt("Number guessing \nPlease enter a number between 1 to 10.")
+			guess=parseInt(number);
+			if (guess!=rand) {
+				alert('猜錯ㄌ，再試看看');
+			}else{
+				alert('猜對ㄌ，好棒');
+				break;
+				
+			}
+		}
+		document.write ("按F5再玩一次");
+	</script>
+</body>
+</html>
